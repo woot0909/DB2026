@@ -1,0 +1,232 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="컴퓨터 부품 쇼핑몰 ERD" id="pc-erd">
+    <mxGraphModel dx="829" dy="936" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="E_member" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=0;fontSize=14;" value="회원" vertex="1">
+          <mxGeometry height="50" width="120" x="300" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="E_part" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=0;fontSize=14;" value="부품" vertex="1">
+          <mxGeometry height="50" width="120" x="820" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="E_cat" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=0;fontSize=14;" value="카테고리" vertex="1">
+          <mxGeometry height="50" width="120" x="1300" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="E_maker" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=0;fontSize=14;" value="제조사" vertex="1">
+          <mxGeometry height="50" width="120" x="1300" y="575" as="geometry" />
+        </mxCell>
+        <mxCell id="E_review" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=0;fontSize=14;" value="리뷰" vertex="1">
+          <mxGeometry height="50" width="120" x="560" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="R_order" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=0;fontSize=13;" value="주문" vertex="1">
+          <mxGeometry height="80" width="120" x="560" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="R_belong" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=0;fontSize=13;" value="소속" vertex="1">
+          <mxGeometry height="80" width="120" x="1060" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="R_make" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=0;fontSize=13;" value="생산" vertex="1">
+          <mxGeometry height="80" width="120" x="1060" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="R_write" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=0;fontSize=13;" value="작성" vertex="1">
+          <mxGeometry height="80" width="120" x="300" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="R_target" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontStyle=0;fontSize=13;" value="대상" vertex="1">
+          <mxGeometry height="80" width="120" x="820" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="A_m_id" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0;" value="회원아이디" vertex="1">
+          <mxGeometry height="40" width="100" x="110" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="a0" edge="1" parent="1" source="A_m_id" style="endArrow=none;html=1;fontStyle=0" target="E_member" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_m_pw" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0" value="비밀번호" vertex="1">
+          <mxGeometry height="40" width="100" x="220" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" edge="1" parent="1" source="A_m_pw" style="endArrow=none;html=1;fontStyle=0" target="E_member" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_m_name" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0" value="이름" vertex="1">
+          <mxGeometry height="40" width="100" x="330" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" edge="1" parent="1" source="A_m_name" style="endArrow=none;html=1;fontStyle=0" target="E_member" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_m_tel" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0" value="전화번호" vertex="1">
+          <mxGeometry height="40" width="100" x="110" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" edge="1" parent="1" source="A_m_tel" style="endArrow=none;html=1;fontStyle=0" target="E_member" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_m_addr" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0" value="주소" vertex="1">
+          <mxGeometry height="40" width="100" x="110" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" edge="1" parent="1" source="A_m_addr" style="endArrow=none;html=1;fontStyle=0" target="E_member" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_m_grade" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0" value="등급" vertex="1">
+          <mxGeometry height="40" width="100" x="110" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="a5" edge="1" parent="1" source="A_m_grade" style="endArrow=none;html=1;fontStyle=0" target="E_member" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_m_point" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0" value="포인트" vertex="1">
+          <mxGeometry height="40" width="100" x="110" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="a6" edge="1" parent="1" source="A_m_point" style="endArrow=none;html=1;fontStyle=0" target="E_member" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_o_no" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0" value="주문번호" vertex="1">
+          <mxGeometry height="40" width="100" x="320" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="a7" edge="1" parent="1" source="A_o_no" style="endArrow=none;html=1;fontStyle=0" target="R_order" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_o_qty" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0" value="주문수량" vertex="1">
+          <mxGeometry height="40" width="100" x="430" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="a8" edge="1" parent="1" source="A_o_qty" style="endArrow=none;html=1;fontStyle=0" target="R_order" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_o_addr" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0" value="배송지" vertex="1">
+          <mxGeometry height="40" width="100" x="540" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="a9" edge="1" parent="1" source="A_o_addr" style="endArrow=none;html=1;fontStyle=0" target="R_order" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_o_date" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0" value="주문일자" vertex="1">
+          <mxGeometry height="40" width="100" x="650" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="a10" edge="1" parent="1" source="A_o_date" style="endArrow=none;html=1;fontStyle=0" target="R_order" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_o_pay" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0" value="결제방법" vertex="1">
+          <mxGeometry height="40" width="100" x="760" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="a11" edge="1" parent="1" source="A_o_pay" style="endArrow=none;html=1;fontStyle=0" target="R_order" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_p_no" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0;" value="부품번호" vertex="1">
+          <mxGeometry height="40" width="100" x="900" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="a12" edge="1" parent="1" source="A_p_no" style="endArrow=none;html=1;fontStyle=0" target="E_part" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_p_name" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0" value="부품명" vertex="1">
+          <mxGeometry height="40" width="100" x="790" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="a13" edge="1" parent="1" source="A_p_name" style="endArrow=none;html=1;fontStyle=0" target="E_part" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_p_model" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0" value="모델명" vertex="1">
+          <mxGeometry height="40" width="100" x="1010" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="a14" edge="1" parent="1" source="A_p_model" style="endArrow=none;html=1;fontStyle=0" target="E_part" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_p_price" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0" value="가격" vertex="1">
+          <mxGeometry height="40" width="100" x="1120" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="a15" edge="1" parent="1" source="A_p_price" style="endArrow=none;html=1;fontStyle=0" target="E_part" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_p_stock" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0" value="재고량" vertex="1">
+          <mxGeometry height="40" width="100" x="1230" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="a16" edge="1" parent="1" source="A_p_stock" style="endArrow=none;html=1;fontStyle=0" target="E_part" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_c_no" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0;" value="&lt;span style=&quot;&quot;&gt;카테고리번호&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="120" x="1470" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="a17" edge="1" parent="1" source="A_c_no" style="endArrow=none;html=1;fontStyle=0" target="E_cat" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_c_name" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0" value="카테고리명" vertex="1">
+          <mxGeometry height="40" width="120" x="1470" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="a18" edge="1" parent="1" source="A_c_name" style="endArrow=none;html=1;fontStyle=0" target="E_cat" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_k_name" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0;" value="제조사명" vertex="1">
+          <mxGeometry height="40" width="110" x="1480" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="a19" edge="1" parent="1" source="A_k_name" style="endArrow=none;html=1;fontStyle=0" target="E_maker" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_k_country" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0" value="국가" vertex="1">
+          <mxGeometry height="40" width="110" x="1480" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="a20" edge="1" parent="1" source="A_k_country" style="endArrow=none;html=1;fontStyle=0" target="E_maker" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_k_tel" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0" value="고객센터번호" vertex="1">
+          <mxGeometry height="40" width="110" x="1480" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="a21" edge="1" parent="1" source="A_k_tel" style="endArrow=none;html=1;fontStyle=0" target="E_maker" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_k_web" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0" value="홈페이지" vertex="1">
+          <mxGeometry height="40" width="110" x="1480" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="a22" edge="1" parent="1" source="A_k_web" style="endArrow=none;html=1;fontStyle=0" target="E_maker" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_r_no" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0;" value="리뷰번호" vertex="1">
+          <mxGeometry height="40" width="100" x="400" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="a23" edge="1" parent="1" source="A_r_no" style="endArrow=none;html=1;fontStyle=0" target="E_review" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_r_score" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0" value="평점" vertex="1">
+          <mxGeometry height="40" width="100" x="510" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="a24" edge="1" parent="1" source="A_r_score" style="endArrow=none;html=1;fontStyle=0" target="E_review" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_r_body" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0" value="리뷰내용" vertex="1">
+          <mxGeometry height="40" width="100" x="620" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="a25" edge="1" parent="1" source="A_r_body" style="endArrow=none;html=1;fontStyle=0" target="E_review" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A_r_date" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=0" value="작성일자" vertex="1">
+          <mxGeometry height="40" width="100" x="730" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="a26" edge="1" parent="1" source="A_r_date" style="endArrow=none;html=1;fontStyle=0" target="E_review" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L1" edge="1" parent="1" source="E_member" style="endArrow=none;html=1;fontSize=14;fontStyle=0;labelBackgroundColor=#ffffff;" target="R_order" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L2" edge="1" parent="1" source="R_order" style="endArrow=none;html=1;fontSize=14;fontStyle=0;labelBackgroundColor=#ffffff;" target="E_part" value="M">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L3" edge="1" parent="1" source="E_part" style="shape=link;endArrow=none;html=1;fontSize=14;fontStyle=0;labelBackgroundColor=#ffffff;" target="R_belong" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L4" edge="1" parent="1" source="R_belong" style="endArrow=none;html=1;fontSize=14;fontStyle=0;labelBackgroundColor=#ffffff;" target="E_cat" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L5" edge="1" parent="1" source="E_part" style="shape=link;endArrow=none;html=1;fontSize=14;fontStyle=0;labelBackgroundColor=#ffffff;" target="R_make" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L6" edge="1" parent="1" source="R_make" style="endArrow=none;html=1;fontSize=14;fontStyle=0;labelBackgroundColor=#ffffff;" target="E_maker" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L7" edge="1" parent="1" source="E_member" style="endArrow=none;html=1;fontSize=14;fontStyle=0;labelBackgroundColor=#ffffff;" target="R_write" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L8" edge="1" parent="1" source="R_write" style="shape=link;endArrow=none;html=1;fontSize=14;fontStyle=0;labelBackgroundColor=#ffffff;" target="E_review" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L9" edge="1" parent="1" source="E_part" style="endArrow=none;html=1;fontSize=14;fontStyle=0;labelBackgroundColor=#ffffff;" target="R_target" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L10" edge="1" parent="1" source="R_target" style="shape=link;endArrow=none;html=1;fontSize=14;fontStyle=0;labelBackgroundColor=#ffffff;" target="E_review" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
